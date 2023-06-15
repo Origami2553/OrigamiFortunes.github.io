@@ -6,8 +6,10 @@ body {
   }
   
   header {
-    position: relative;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #f9f9f9;
     padding: 50px 0;
   }
@@ -21,13 +23,14 @@ body {
     font-size: 18px;
     color: #666;
     max-width: 600px;
-    margin: 0 auto;
     margin-top: 20px;
   }
   
   section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 50px 0;
-    text-align: center;
     background-color: #fff;
   }
   
@@ -37,14 +40,15 @@ body {
   }
   
   .image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     margin-top: 20px;
   }
   
   .image-grid img {
-    width: 100%;
+    width: 250px;
     height: auto;
   }
   
